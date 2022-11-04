@@ -24,3 +24,25 @@ The Blog should have a Home Page, About Page, Contact Page, the Blog application
 
 # ADDITIONAL FEATURES BY ME 
 - Password reset 
+- Two factor authentication 
+- Add image to post 
+- Add profile image 
+
+
+## ENPOINTS
+| ROUTE | FUNCTIONALITY |ACCESS|
+| ----- | ------------- | ------------- |
+| ```/register``` | _Register new user_| _Any user_|
+| ```/login``` | _Login user_| _Any_|
+| ```/logout``` | _Logout user_| _Authenticated user_|
+| ```/password-reset``` | _Request password reset_| _Any_|
+| ```/password-reset/<token>/<public_id>``` | _Confirm password reset & create new password_| _Any_|
+| ```/``` | _Home page_| _Any_|
+| ```/posts``` | _Get a posts_| _Authenticated user_|
+| ```/posts/<public_id>``` | _Retrive a post_| _Authenticated user_|
+| ```/posts/<public_id>/create``` | _Create a post_| _Authenticated user_|
+| ```/posts/<public_id>/edit``` | _Edit a post_| _Authenticated user and post author_|
+| ```/posts/<public_id>/delete``` | _Delete a post_| _Authenticated user and post author_|
+| ```/account``` | _User account_| _Authenticated user_|
+| ```/account/edit``` | _Edit account_| _Authenticated user_|
+| ```/account/delete``` | _Delete account_| _Authenticated user_|
